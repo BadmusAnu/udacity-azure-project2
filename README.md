@@ -64,4 +64,4 @@ jobs:
 
 After commiting, your build should be green. In details, it should look like this:
 
-![GitHub Actions passed](screenshot/github_actions_passed.png)
+![GitHub Actions passed](https://github.com/acouprie/udacity-azure-project2/blob/main/screenshots/github_actions_passed.png)
