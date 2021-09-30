@@ -141,10 +141,27 @@ Where -g is the resource group where your App Service is stored and -n is the ac
 
 ![Logs](https://github.com/acouprie/udacity-azure-project2/blob/main/screenshots/logs.png)
 
+### Locust
+
+Install locust with pip and run it:
+
+```
+pip install locust
+locust
+```
+
+Go on http://0.0.0.0:8089/ and enter the URL of the App Service.
+
+![Locust Main](https://github.com/acouprie/udacity-azure-project2/blob/main/screenshots/locust-main.png)
+
+After running:
+
+![Locust Running](https://github.com/acouprie/udacity-azure-project2/blob/main/screenshots/locust-running.png)
+
 ## Enhancements
 
-Deploy with Docker
+Deploy with Docker and Kubernetes
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+[Link to the video demo](https://youtu.be/hp1tQ1RR1xU)
