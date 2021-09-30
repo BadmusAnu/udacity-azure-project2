@@ -1,67 +1,51 @@
-# udacity-azure-project2
+# Overview
 
-## Set up Azure Cloud Shell
+<TODO: complete this with an overview of your project>
 
-### Pair the SSH keys
+## Project Plan
+<TODO: Project Plan
 
-Open the Azure shell and type:
+* A link to a Trello board for the project
+* A link to a spreadsheet that includes the original and final project plan>
 
-```
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub
-```
+## Instructions
 
-The id_rsa.pub file contains the key that needs to be copy and paste into GitHub.
-(GitHub > Settings > SSH and GPG keys > Paste > Add the key).
+<TODO:  
+* Architectural Diagram (Shows how key parts of the system work)>
 
-Then you can clone the repository from the Azure Shell without typing your password.
+<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
-```
-git clone git@github.com:acouprie/udacity-azure-project2.git
-```
+* Project running on Azure App Service
 
-### Create a virtual environment
+* Project cloned into Azure Cloud Shell
 
-```
-python3 -m venv ~/.udacity-azure-project2
-source ~/.udacity-azure-project2/bin/activate
-```
+* Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-## Configure GitHub Actions
+* Output of a test run
 
-### Create the workflow
+* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
-GitHub > Actions > set up a workflow yourself
+* Running Azure App Service from Azure Pipelines automatic deployment
 
-Copy the following the replace the default template:
+* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
+The output should look similar to this:
 
-```
-name: Python application test with Github Actions
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.5
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.5
-    - name: Install dependencies
-      run: |
-        make install
-    - name: Lint with pylint
-      run: |
-        make lint
-    - name: Test with pytest
-      run: |
-        make test
+```bash
+udacity@Azure:~$ ./make_predict_azure_app.sh
+Port: 443
+{"prediction":[20.35373177134412]}
 ```
 
-After commiting, your build should be green. In details, it should look like this:
+* Output of streamed log files from deployed application
 
-![GitHub Actions passed](https://github.com/acouprie/udacity-azure-project2/blob/main/screenshots/github_actions_passed.png)
+> 
+
+## Enhancements
+
+<TODO: A short description of how to improve the project in the future>
+
+## Demo 
+
+<TODO: Add link Screencast on YouTube>
+
+
