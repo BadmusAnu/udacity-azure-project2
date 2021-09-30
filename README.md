@@ -2,7 +2,7 @@
 
 # Overview of udacity-azure-project2
 
-This project is being created during the [Azure DevOps Nanodegree on Udacity](https://www.udacity.com/course/cloud-devops-using-microsoft-azure-nanodegree--nd082).
+This project has been created during the [Azure DevOps Nanodegree on Udacity](https://www.udacity.com/course/cloud-devops-using-microsoft-azure-nanodegree--nd082).
 
 After planning the different steps regarding the deployment of a Python Flask Machine Learning app, we will manage to add GitHub Actions and Azure Pipeline to it to have a fully working CI/CD environment.
 
