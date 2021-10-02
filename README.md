@@ -160,7 +160,8 @@ After running:
 
 ## Enhancements
 
-Deploy with Docker and Kubernetes
+We should consider deploying with tools such as Docker or Kubernetes.
+We should also consider having different environments related to different GitHub branches (staging and production) with Terraform and Packer templates to have a similare infrastructure between those environments. There could be a pipe between staging and production: if the code is correctly tested on staging, it can be deployed in production.
 
 ## Demo 
 
